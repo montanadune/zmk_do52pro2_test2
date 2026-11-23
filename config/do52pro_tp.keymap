@@ -94,7 +94,7 @@
         config_layer {
             bindings = <
 &bootloader       &bt BT_SEL 4   &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0         &bt BT_CLR_ALL &bt BT_DISC 4 &bt BT_DISC 3 &bt BT_DISC 2 &bt BT_DISC 1 &bt BT_DISC 0
-&none             &none          &none          &trans         &bt BT_NXT     &bt BT_PRV           &none          &none         &none         &none         &none         &none
+&none             &none          &none          &trans         &bt BT_NXT     &bt BT_PRV           &none          &none         &none         &none         &none         &out OUT_TOG
 &none             &none          &none          &none          &none          &none                &none          &none         &none         &none         &none         &none
 &none             &none          &none          &none          &none          &none                &none          &none         &none         &none         &none         &none
 &ext_power EP_ON  &ext_power EP_OFF                            &bt BT_CLR_ALL &bt BT_CLR           &none          &none                       &none         &none
