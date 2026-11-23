@@ -89,7 +89,7 @@
           acceleration-factor-max = <130>;
           acceleration-factor-rate = <40>;
           acceleration-start-offset = <50>;
-          max-speed = <50>;
+          max-speed = <100>;
 
           enable-interval-based-speed;
           input-default-sending-rate = <PS2_MOUSE_SAMPLING_RATE>;
@@ -160,7 +160,7 @@
 
 
       // Not quite sure what it does tbh :) (Default: 6)
-      // tp-neg-inertia = <6>;
+      // tp-neg-inertia = <10>;
 
 
       // Enable clicking by tapping on the TP.
