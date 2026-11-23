@@ -160,7 +160,7 @@
 
 
       // Not quite sure what it does tbh :) (Default: 6)
-      // tp-neg-inertia = <20>;
+      // tp-neg-inertia = <10>;
 
 
       // Enable clicking by tapping on the TP.
