@@ -115,8 +115,9 @@
     */
 
     &mouse_ps2_input_listener {
-      move-accelerator = <&input_accelerator_move>;
-      scroll-accelerator = <&input_accelerator_scroll>;
+      // 一時的にアクセラレータをコメントアウトして生データで挙動を見る
+      // move-accelerator = <&input_accelerator_move>;
+      // scroll-accelerator = <&input_accelerator_scroll>;
 
       scroll-layers = <LOWER MOUSE_TP_KEYS>;
       //scroll-layers-reverse-direction-horizontal;
@@ -151,7 +152,7 @@
     &mouse_ps2 {
 
       // How sensitive the TP is (Default: 128)
-       tp-sensitivity = <25>;
+       tp-sensitivity = <100>;
 
 
       // The maximum mouse movement speed the TP will accelarate to
@@ -194,7 +195,7 @@
       //
       // If you are using mouse acceleration, please make sure to set the
       // same value for the input-default-sending-rate option.
-      //sampling-rate = <PS2_MOUSE_SAMPLING_RATE>;
+      sampling-rate = <PS2_MOUSE_SAMPLING_RATE>;
 
 
       // Disables clicking.
