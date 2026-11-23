@@ -53,7 +53,7 @@
 &kp BSPC        &kp P           &kp O     &kp I   &kp U   &kp Y                &kp T  &kp R  &kp E  &kp W  &kp Q        &kp TAB
 &bt BT_SEL 1    &mt RSHIFT SEMI &kp L     &kp K   &kp J   &kp H                &kp G  &kp F  &kp D  &kp S  &kp A        &kp LCTRL
 &bt BT_CLR      &lt 7 FSLH      &kp DOT   &kp COMMA &kp M &kp N                &kp B  &kp V  &kp C  &kp X  &mt LSHIFT Z &kp LSHFT
-&mo 4           &mo 3                     &mo 5   &lt 1 SPACE                  &mt LGUI RET  &kp LALT             &kp LCTRL    &mo 1
+&mo 4           &mo 3                     &mo 5   &lt 1 SPACE                  &mt LGUI RET  &kp LALT             &mo 4    &mo 1
 &mkp LCLK       &kp N4          &mkp RCLK &kp N2  &mkp MCLK                    &mkp LCLK &kp N4 &mkp RCLK &kp N2 &mkp MCLK
             >;
         };
