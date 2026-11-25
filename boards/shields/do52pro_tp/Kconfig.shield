@@ -1,8 +1,6 @@
 config SHIELD_DO52PRO_TP_LEFT
     def_bool $(shields_list_contains,do52pro_tp_left)
 
-
-# 修正後（右手を指定されたら、強制的にCentral属性を付与する）
 config SHIELD_DO52PRO_TP_RIGHT
     def_bool $(shields_list_contains,do52pro_tp_right)
-    select ZMK_SPLIT_ROLE_CENTRAL
+
