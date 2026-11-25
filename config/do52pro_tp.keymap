@@ -120,8 +120,8 @@
 
         MouseTP_layer {
             bindings = <
-&mms MS_TP_VALUE6_INCR  &mms MS_TP_PTS_THRESHOLD_INCR  &mms MS_TP_SENSITIVITY_INCR  &trans              &trans     &trans     &trans     &trans  &trans     &trans  &trans     &trans
-&mms MS_TP_VALUE6_DECR  &mms MS_TP_PTS_THRESHOLD_DECR  &mms MS_TP_SENSITIVITY_DECR  &trans              &trans     &trans     &trans     &trans  &trans     &trans  &trans     &trans
+&mms MS_TP_VALUE6_INCR  &mms MS_TP_PTS_THRESHOLD_INCR  &mms MS_TP_SENSITIVITY_INCR  &trans              &mms MS_TP_VALUE6_INCR  &mms MS_TP_PTS_THRESHOLD_INCR  &mms MS_TP_SENSITIVITY_INCR     &trans  &trans     &trans  &trans     &trans
+&mms MS_TP_VALUE6_DECR  &mms MS_TP_PTS_THRESHOLD_DECR  &mms MS_TP_SENSITIVITY_DECR  &trans              &mms MS_TP_VALUE6_DECR  &mms MS_TP_PTS_THRESHOLD_DECR  &mms MS_TP_SENSITIVITY_DECR     &trans  &trans     &trans  &trans     &trans
 &trans                  &trans                         &msc MOVE_X(10)              &msc (MOVE_Y(-10))  &mkp MB5   &mkp MB4   &trans     &trans  &trans     &trans  &trans     &trans
 &trans                  &trans                         &msc (MOVE_X(-10))           &msc MOVE_Y(10)     &trans     &trans     &trans     &trans  &trans     &trans  &trans     &trans
 &trans                  &trans                                                                          &mkp RCLK  &mkp LCLK  &trans     &trans                     &trans     &trans
