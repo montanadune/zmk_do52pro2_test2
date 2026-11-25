@@ -59,7 +59,7 @@
 &bt BT_SEL 1  &mt RSHIFT SEMI  &kp L    &kp K      &kp J   &kp H        &kp G         &kp F     &kp D      &kp S   &kp A         &kp LCTRL
 &bt BT_CLR    &lt 7 FSLH       &kp DOT  &kp COMMA  &kp M   &kp N        &kp B         &kp V     &kp C      &kp X   &mt LSHIFT Z  &kp LSHFT
 &mo 4         &mo 3                                &mo 5   &lt 1 SPACE  &mt LGUI RET  &kp LALT                     &mo 4         &mo 1
-              &mkp LCLK        &kp N4   &mkp RCLK  &kp N2  &mkp MCLK    &mkp LCLK     &kp N4    &mkp RCLK  &kp N2  &mkp MCLK
+              &trans           &trans   &trans     &trans  &trans       &mkp LCLK     &kp N4    &mkp RCLK  &kp N2  &mkp MCLK
             >;
         };
 
@@ -120,12 +120,12 @@
 
         MouseTP_layer {
             bindings = <
-&mms MS_TP_VALUE6_INCR  &mms MS_TP_PTS_THRESHOLD_INCR  &mms MS_TP_SENSITIVITY_INCR  &trans              &mms MS_TP_VALUE6_INCR  &mms MS_TP_PTS_THRESHOLD_INCR  &mms MS_TP_SENSITIVITY_INCR     &trans  &trans     &trans  &trans     &trans
-&mms MS_TP_VALUE6_DECR  &mms MS_TP_PTS_THRESHOLD_DECR  &mms MS_TP_SENSITIVITY_DECR  &trans              &mms MS_TP_VALUE6_DECR  &mms MS_TP_PTS_THRESHOLD_DECR  &mms MS_TP_SENSITIVITY_DECR     &trans  &trans     &trans  &trans     &trans
-&trans                  &trans                         &msc MOVE_X(10)              &msc (MOVE_Y(-10))  &mkp MB5   &mkp MB4   &trans     &trans  &trans     &trans  &trans     &trans
-&trans                  &trans                         &msc (MOVE_X(-10))           &msc MOVE_Y(10)     &trans     &trans     &trans     &trans  &trans     &trans  &trans     &trans
-&trans                  &trans                                                                          &mkp RCLK  &mkp LCLK  &trans     &trans                     &trans     &trans
-                        &mkp LCLK                      &kp N4                       &mkp RCLK           &kp N2     &mkp MCLK  &mkp LCLK  &kp N4  &mkp RCLK  &kp N2  &mkp MCLK
+&mms MS_TP_VALUE6_INCR  &mms MS_TP_PTS_THRESHOLD_INCR  &mms MS_TP_SENSITIVITY_INCR  &trans              &mms MS_TP_VALUE6_INCR  &mms MS_TP_PTS_THRESHOLD_INCR  &mms MS_TP_SENSITIVITY_INCR  &trans  &trans     &trans  &trans     &trans
+&mms MS_TP_VALUE6_DECR  &mms MS_TP_PTS_THRESHOLD_DECR  &mms MS_TP_SENSITIVITY_DECR  &trans              &mms MS_TP_VALUE6_DECR  &mms MS_TP_PTS_THRESHOLD_DECR  &mms MS_TP_SENSITIVITY_DECR  &trans  &trans     &trans  &trans     &trans
+&trans                  &trans                         &msc MOVE_X(10)              &msc (MOVE_Y(-10))  &mkp MB5                &mkp MB4                       &trans                       &trans  &trans     &trans  &trans     &trans
+&trans                  &trans                         &msc (MOVE_X(-10))           &msc MOVE_Y(10)     &trans                  &trans                         &trans                       &trans  &trans     &trans  &trans     &trans
+&trans                  &trans                                                                          &mkp RCLK               &mkp LCLK                      &trans                       &trans                     &trans     &trans
+                        &mkp LCLK                      &kp N4                       &mkp RCLK           &kp N2                  &mkp MCLK                      &mkp LCLK                    &kp N4  &mkp RCLK  &kp N2  &mkp MCLK
             >;
         };
     };
