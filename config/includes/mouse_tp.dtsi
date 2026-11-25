@@ -24,10 +24,10 @@
           status = "okay";
           compatible = "zmk,input-accelerator";
           acceleration-curve = "sigmoid";
-          acceleration-factor-base = <30>;
-          acceleration-factor-max = <140>;
-          acceleration-factor-rate = <40>;
-          acceleration-start-offset = <60>;
+          acceleration-factor-base = <10>;    // ★30 -> 10: 静止時の微小ドリフトを1/3に圧縮
+          acceleration-factor-max = <150>;    // ★140 -> 150: 指で倒した時の最高速を補強
+          acceleration-factor-rate = <50>;    // ★40 -> 50: 一定の力を超えた後の立ち上がりを良くする
+          acceleration-start-offset = <100>;  // ★60 -> 100: 不感帯（デッドゾーン）を広くして勝手に動かないようにする
           max-speed = <110>;
           enable-interval-based-speed;
           input-default-sending-rate = <PS2_MOUSE_SAMPLING_RATE>;
@@ -55,14 +55,15 @@
       x-invert;
       y-invert;
       layer-toggle = <MOUSE_TP>;
-      layer-toggle-delay-ms = <300>;
-      layer-toggle-timeout-ms = <125>;
+      layer-toggle-delay-ms = <350>;               // ★300 -> 350: ドリフトでマウスレイヤーが誤爆するのを防ぐ
+      layer-toggle-timeout-ms = <100>;             // ★125 -> 100: 操作終了後すぐに通常レイヤーへ戻す
       layer-toggle-require-prior-idle-ms = <300>;
     };
 
     &mouse_ps2 {
       status = "okay";
-      tp-sensitivity = <60>;
+      tp-sensitivity = <45>;   // ★60 -> 45: センサー自体の感度を少し下げてノイズを拾いにくくする
+      tp-neg-inertia = <2>;    // ★追加: 指を離した直後の「揺り戻しドリフト」を抑える（デフォルト6）
       disable-clicking;
     };
 
