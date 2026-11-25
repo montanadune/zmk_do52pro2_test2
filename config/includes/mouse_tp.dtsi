@@ -195,7 +195,7 @@
       // If you are using mouse acceleration, please make sure to set the
       // same value for the input-default-sending-rate option.
       // ★変更: コメントアウトを解除してサンプリングレートを40Hzに統一する
-       sampling-rate = <PS2_MOUSE_SAMPLING_RATE>;
+      // sampling-rate = <PS2_MOUSE_SAMPLING_RATE>;
 
 
       // Disables clicking.
