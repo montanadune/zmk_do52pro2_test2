@@ -4,7 +4,7 @@
   #include <behaviors/mouse_keys.dtsi>
   #include <behaviors/mouse_setting.dtsi>
 
-  // ランタイム設定・リセット用キーコード定義
+  // ランタイム感度調整用キーコード（これらは通信が止まらない安全なキーです）
   #define U_MSS_TP_S_I  &mms MS_TP_SENSITIVITY_INCR
   #define U_MSS_TP_S_D  &mms MS_TP_SENSITIVITY_DECR
   #define U_MSS_TP_V6_I &mms MS_TP_VALUE6_INCR
@@ -13,7 +13,6 @@
   #define U_MSS_TP_NI_D &mms MS_TP_NEG_INERTIA_DECR
   #define U_MSS_TP_PT_I &mms MS_TP_PTS_THRESHOLD_INCR
   #define U_MSS_TP_PT_D &mms MS_TP_PTS_THRESHOLD_DECR
-  #define U_MSS_RESET   &mms MS_RESET
   #define U_MSS_LOG     &mms MS_LOG
 
   #ifdef MOUSE_PS2_DT_PRESENT
@@ -24,11 +23,11 @@
           status = "okay";
           compatible = "zmk,input-accelerator";
           acceleration-curve = "sigmoid";
-          acceleration-factor-base = <10>;    // ★30 -> 10: 静止時の微小ドリフトを1/3に圧縮
-          acceleration-factor-max = <150>;    // ★140 -> 150: 指で倒した時の最高速を補強
-          acceleration-factor-rate = <50>;    // ★40 -> 50: 一定の力を超えた後の立ち上がりを良くする
-          acceleration-start-offset = <80>;  // ★60 -> 100: 不感帯（デッドゾーン）を広くして勝手に動かないようにする
-          max-speed = <110>;
+          acceleration-factor-base = <35>;   // ★10 -> 35: 通常の移動速度を大幅に引き上げ
+          acceleration-factor-max = <200>;   // ★150 -> 200: 素早く動かした時の最高速をアップ
+          acceleration-factor-rate = <65>;   // ★50 -> 65: 指を入れた瞬間の立ち上がりを鋭くする
+          acceleration-start-offset = <45>;  // ★100 -> 45: 軽い力ですぐ加速が始まるようにする
+          max-speed = <150>;                 // ★110 -> 150: 速度の上限を解放
           enable-interval-based-speed;
           input-default-sending-rate = <PS2_MOUSE_SAMPLING_RATE>;
         };
@@ -55,15 +54,15 @@
       x-invert;
       y-invert;
       layer-toggle = <MOUSE_TP>;
-      layer-toggle-delay-ms = <350>;               // ★300 -> 350: ドリフトでマウスレイヤーが誤爆するのを防ぐ
-      layer-toggle-timeout-ms = <100>;             // ★125 -> 100: 操作終了後すぐに通常レイヤーへ戻す
+      layer-toggle-delay-ms = <300>;
+      layer-toggle-timeout-ms = <125>;
       layer-toggle-require-prior-idle-ms = <300>;
     };
 
     &mouse_ps2 {
       status = "okay";
-      tp-sensitivity = <45>;   // ★60 -> 45: センサー自体の感度を少し下げてノイズを拾いにくくする
-      tp-neg-inertia = <2>;    // ★追加: 指を離した直後の「揺り戻しドリフト」を抑える（デフォルト6）
+      tp-sensitivity = <75>;   // ★45 -> 75: センサーの基本感度を実用レベルまで引き上げ
+      tp-neg-inertia = <2>;
       disable-clicking;
     };
 
