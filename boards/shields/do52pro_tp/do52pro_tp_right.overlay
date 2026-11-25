@@ -46,7 +46,8 @@
 // nice!nano clone or a seeduino xiao.
 //
 // In all other cases you should try using the UART driver first.
-#define MOUSE_PS2_DRIVER_UART
+// 変更後（GPIOドライバーに切り替え）
+// #define MOUSE_PS2_DRIVER_UART
 
 
 // Configure the SCL and SDA pins using the`&pro_micro` notation.
