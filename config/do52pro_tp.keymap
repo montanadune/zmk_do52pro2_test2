@@ -70,7 +70,7 @@
 &kp APOS         &kp BSPC   &kp RIGHT  &kp UP     &kp DOWN  &kp LEFT   &kp G      &kp LS(RPAR)    &kp LS(QMARK)    &kp LS(LPAR)  &kp MINUS  &trans
 &kp RIGHT_SHIFT  &kp SQT    &kp GRAVE  &kp BSLH   &kp RBKT  &kp LBKT   &kp TILDE  &kp LG(K_MUTE)  &kp C_VOLUME_UP  &kp C_VOL_DN  &kp EQUAL  &kp LSHFT
 &trans           &trans                           &trans    &trans     &trans     &trans                                         &trans     &trans
-                 &mkp LCLK  &kp N4     &mkp RCLK  &kp N2    &mkp MCLK  &mkp LCLK  &kp N4          &mkp RCLK        &kp N2        &mkp MCLK
+              &trans           &trans   &trans     &trans  &trans       &mkp LCLK     &kp N4    &mkp RCLK  &kp N2  &mkp MCLK
             >;
         };
 
@@ -81,7 +81,7 @@
 &kp APOS   &none              &kp RIGHT_ARROW   &kp DOWN_ARROW  &kp LEFT_ARROW  &none      &none      &kp RPAR  &kp LPAR   &none   &none      &kp LSHFT
 &none      &none              &none             &none           &none           &none      &none      &kp RPAR  &kp LPAR   &none   &none      &kp LSHFT
 &kp RGUI   &kp LALT                                             &trans          &trans     &trans     &trans                       &none      &kp LCTRL
-           &mkp LCLK          &kp N4            &mkp RCLK       &kp N2          &mkp MCLK  &mkp LCLK  &kp N4    &mkp RCLK  &kp N2  &mkp MCLK
+              &trans           &trans   &trans     &trans  &trans       &mkp LCLK     &kp N4    &mkp RCLK  &kp N2  &mkp MCLK
             >;
         };
 
@@ -92,7 +92,7 @@
 &none     &none      &none    &none      &none    &none      &none      &none   &none      &none   &none      &kp LSHFT
 &none     &none      &none    &none      &none    &none      &none      &none   &none      &none   &none      &kp LSHFT
 &kp RGUI  &kp LALT                       &none    &none      &none      &none                      &kp LGUI   &kp LCTRL
-          &mkp LCLK  &kp N4   &mkp RCLK  &kp N2   &mkp MCLK  &mkp LCLK  &kp N4  &mkp RCLK  &kp N2  &mkp MCLK
+              &trans           &trans   &trans     &trans  &trans       &mkp LCLK     &kp N4    &mkp RCLK  &kp N2  &mkp MCLK
             >;
         };
 
@@ -103,7 +103,7 @@
 &none             &none              &none         &none         &none           &none         &none           &none          &none          &none          &none          &none
 &none             &none              &none         &none         &none           &none         &none           &none          &none          &none          &none          &none
 &ext_power EP_ON  &ext_power EP_OFF                              &bt BT_CLR_ALL  &bt BT_CLR    &none           &none                                        &none          &none
-                  &mkp LCLK          &kp N4        &mkp RCLK     &kp N2          &mkp MCLK     &mkp LCLK       &kp N4         &mkp RCLK      &kp N2         &mkp MCLK
+              &trans           &trans   &trans     &trans  &trans       &mkp LCLK     &kp N4    &mkp RCLK  &kp N2  &mkp MCLK
             >;
         };
 
@@ -114,7 +114,7 @@
 &trans                  &trans                         &msc MOVE_X(10)              &msc (MOVE_Y(-10))  &mkp MB5  &mkp MB4   &trans      &trans        &trans        &trans        &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC
 &trans                  &trans                         &msc (MOVE_X(-10))           &msc MOVE_Y(10)     &trans    &trans     &trans      &kp C_PAUSE   &kp C_NEXT    &kp C_PREV    &trans                &trans
 &trans                  &trans                                                                          &trans    &trans     &trans      &trans                                    &trans                &trans
-                        &mkp LCLK                      &kp N4                       &mkp RCLK           &kp N2    &mkp MCLK  &mkp LCLK   &kp N4        &mkp RCLK     &kp N2        &mkp MCLK
+              &trans           &trans   &trans     &trans  &trans       &mkp LCLK     &kp N4    &mkp RCLK  &kp N2  &mkp MCLK
             >;
         };
 
@@ -125,7 +125,7 @@
 &trans                  &trans                         &msc MOVE_X(10)              &msc (MOVE_Y(-10))  &mkp MB5                &mkp MB4                       &trans                       &trans  &trans     &trans  &trans     &trans
 &trans                  &trans                         &msc (MOVE_X(-10))           &msc MOVE_Y(10)     &trans                  &trans                         &trans                       &trans  &trans     &trans  &trans     &trans
 &trans                  &trans                                                                          &mkp RCLK               &mkp LCLK                      &trans                       &trans                     &trans     &trans
-                        &mkp LCLK                      &kp N4                       &mkp RCLK           &kp N2                  &mkp MCLK                      &mkp LCLK                    &kp N4  &mkp RCLK  &kp N2  &mkp MCLK
+              &trans           &trans   &trans     &trans  &trans       &mkp LCLK     &kp N4    &mkp RCLK  &kp N2  &mkp MCLK
             >;
         };
     };
