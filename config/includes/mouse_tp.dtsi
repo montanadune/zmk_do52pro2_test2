@@ -85,7 +85,7 @@
           compatible = "zmk,input-accelerator";
 
           acceleration-curve = "sigmoid";
-          acceleration-factor-base = <80>;
+          acceleration-factor-base = <50>;   // ★変更: 80 -> 50 (初動の過剰な増幅を抑える)
           acceleration-factor-max = <130>;
           acceleration-factor-rate = <40>;
           acceleration-start-offset = <50>;
@@ -151,8 +151,7 @@
     &mouse_ps2 {
 
       // How sensitive the TP is (Default: 128)
-       tp-sensitivity = <30>;
-
+         tp-sensitivity = <50>;                // ★変更: 30 -> 50 (ベース加速を下げた分、センサー感度を少し戻す)
 
       // The maximum mouse movement speed the TP will accelarate to
       // (Default: 97)
@@ -165,8 +164,9 @@
 
       // Enable clicking by tapping on the TP.
       // Not all TPs support this.
-      tp-press-to-select;
-      tp-press-to-select-threshold = <5>;
+       // ★変更: 誤動作・ドリフトの原因になりやすいタップクリックを一旦オフにする
+       // tp-press-to-select;
+       // tp-press-to-select-threshold = <5>;
 
 
       // Adjust axis settings on the TP
@@ -194,7 +194,8 @@
       //
       // If you are using mouse acceleration, please make sure to set the
       // same value for the input-default-sending-rate option.
-      //sampling-rate = <PS2_MOUSE_SAMPLING_RATE>;
+      // ★変更: コメントアウトを解除してサンプリングレートを40Hzに統一する
+       sampling-rate = <PS2_MOUSE_SAMPLING_RATE>;
 
 
       // Disables clicking.
