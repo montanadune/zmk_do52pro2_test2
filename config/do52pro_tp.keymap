@@ -54,18 +54,18 @@
 &bt BT_SEL 1    &mt RSHIFT SEMI &kp L     &kp K   &kp J   &kp H                &kp G  &kp F  &kp D  &kp S  &kp A        &kp LCTRL
 &bt BT_CLR      &lt 7 FSLH      &kp DOT   &kp COMMA &kp M &kp N                &kp B  &kp V  &kp C  &kp X  &mt LSHIFT Z &kp LSHFT
 &mo 4           &mo 3                     &mo 5   &lt 1 SPACE                  &mt LGUI RET  &kp LALT             &mo 4    &mo 1
-&mkp LCLK       &kp N4          &mkp RCLK &kp N2  &mkp MCLK                    &mkp LCLK &kp N4 &mkp RCLK &kp N2 &mkp MCLK
+&none       &none          &none &none  &none                    &mkp LCLK &kp N4 &mkp RCLK &kp N2 &mkp MCLK
             >;
         };
 
         lower_layer {
             bindings = <
-&bootloader     &kp F10   &kp F9    &kp F8    &kp F7    &kp F6                 &bootloader   &kp F4   &kp F3   &kp F2   &kp F1   &kp GRAVE
+&bootloader     &kp F10   &kp F9    &kp F8    &kp F7    &kp F6                 &none   &kp F4   &kp F3   &kp F2   &kp F1   &kp GRAVE
 &kp MINUS       &kp N0    &kp N9    &kp N8    &kp N7    &kp N6                 &kp N3   &kp N4   &kp N3   &kp N2   &kp N1   &kp TAB
 &kp APOS        &kp BSPC  &kp RIGHT &kp UP    &kp DOWN  &kp LEFT               &kp G    &kp LS(RPAR) &kp LS(QMARK) &kp LS(LPAR) &kp MINUS &trans
 &kp RIGHT_SHIFT &kp SQT   &kp GRAVE &kp BSLH  &kp RBKT  &kp LBKT               &kp TILDE &kp LG(K_MUTE) &kp C_VOLUME_UP &kp C_VOL_DN &kp EQUAL &kp LSHFT
 &trans          &trans                        &trans    &trans                 &trans   &trans                    &trans   &trans
-&mkp LCLK       &kp N4    &mkp RCLK &kp N2    &mkp MCLK                        &mkp LCLK &kp N4 &mkp RCLK &kp N2 &mkp MCLK
+&none       &none    &none &none    &none                        &mkp LCLK &kp N4 &mkp RCLK &kp N2 &mkp MCLK
             >;
         };
 
@@ -93,7 +93,7 @@
 
         config_layer {
             bindings = <
-&bootloader       &bt BT_SEL 4   &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0         &bt BT_CLR_ALL &bt BT_DISC 4 &bt BT_DISC 3 &bt BT_DISC 2 &bt BT_DISC 1 &bt BT_DISC 0
+&bootloader       &bt BT_SEL 4   &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0         &bt BT_CLR_ALL &bt BT_DISC 4 &bt BT_DISC 3 &bt BT_DISC 2 &bt BT_DISC 1 &bootloader
 &none             &none          &none          &trans         &bt BT_NXT     &bt BT_PRV           &none          &none         &none         &none         &none         &out OUT_TOG
 &none             &none          &none          &none          &none          &none                &none          &none         &none         &none         &none         &none
 &none             &none          &none          &none          &none          &none                &none          &none         &none         &none         &none         &none
