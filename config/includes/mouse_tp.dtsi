@@ -85,11 +85,11 @@
           compatible = "zmk,input-accelerator";
 
           acceleration-curve = "sigmoid";
-          acceleration-factor-base = <50>;   // ★変更: 80 -> 50 (初動の過剰な増幅を抑える)
-          acceleration-factor-max = <130>;
-          acceleration-factor-rate = <40>;
-          acceleration-start-offset = <50>;
-          max-speed = <100>;
+          acceleration-factor-base = <15>;   // ★静止時の微小な揺らぎをほぼゼロに抑える
+          acceleration-factor-max = <160>;   // ★指で倒した時のスピードはしっかり出す
+          acceleration-factor-rate = <50>;
+          acceleration-start-offset = <90>;  // ★一定の力がかかるまでカーソルを動かさない
+          max-speed = <120>;
 
           enable-interval-based-speed;
           input-default-sending-rate = <PS2_MOUSE_SAMPLING_RATE>;
