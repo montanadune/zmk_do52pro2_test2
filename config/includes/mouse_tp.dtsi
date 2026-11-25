@@ -27,7 +27,7 @@
           acceleration-factor-base = <10>;    // ★30 -> 10: 静止時の微小ドリフトを1/3に圧縮
           acceleration-factor-max = <150>;    // ★140 -> 150: 指で倒した時の最高速を補強
           acceleration-factor-rate = <50>;    // ★40 -> 50: 一定の力を超えた後の立ち上がりを良くする
-          acceleration-start-offset = <100>;  // ★60 -> 100: 不感帯（デッドゾーン）を広くして勝手に動かないようにする
+          acceleration-start-offset = <80>;  // ★60 -> 100: 不感帯（デッドゾーン）を広くして勝手に動かないようにする
           max-speed = <110>;
           enable-interval-based-speed;
           input-default-sending-rate = <PS2_MOUSE_SAMPLING_RATE>;
